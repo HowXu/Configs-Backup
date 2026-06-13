@@ -3,8 +3,7 @@ local font_size = 12
 
 return {
    font = wezterm.font_with_fallback({
-      'Maple Mono NF CN',
-      '鸿蒙黑体',
+      'Maple Mono NF CN'
    }),
    font_size = font_size,
 

@@ -1,18 +1,16 @@
-local gpu_adapters = require('utils.gpu_adapter')
 local colors = require('colors.custom')
 
 return {
    animation_fps = 60,
    max_fps = 60,
-   front_end = 'WebGpu',
-   webgpu_power_preference = 'HighPerformance',
-   webgpu_preferred_adapter = gpu_adapters:pick_best(),
+   front_end = 'OpenGL',
 
    -- color scheme
    colors = colors,
 
-   -- 0.9 不透明背景 (10% 透)
-   text_background_opacity = 0.9,
+   -- 真窗口半透明 (76% 不透明 / 24% 透到桌面)
+   window_background_opacity = 0.76,
+   text_background_opacity = 1.0,
 
    -- scrollbar
    enable_scroll_bar = false,
