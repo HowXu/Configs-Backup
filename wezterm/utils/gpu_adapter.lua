@@ -28,7 +28,7 @@ GpuAdapters.__index = GpuAdapters
 
 ---See `https://github.com/gfx-rs/wgpu#supported-platforms` for more info on available backends
 GpuAdapters.AVAILABLE_BACKENDS = {
-   windows = { 'Vulkan', 'Dx12', 'Gl' },
+   windows = { 'Dx12', 'Vulkan', 'Gl' },
    linux = { 'Vulkan', 'Gl' },
    mac = { 'Metal' },
 }
@@ -66,7 +66,7 @@ end
 ---   2. Best graphics API available (based off my very scientific scroll a big log file in neovim test 😁)
 ---
 ---Graphics API choices are based on the platform:
----   - Windows: Vulkan > Dx12 > OpenGl
+---   - Windows: Dx12 > Vulkan > OpenGl
 ---   - Linux: Vulkan > OpenGl
 ---   - Mac: Metal
 ---@see GpuAdapters.AVAILABLE_BACKENDS
