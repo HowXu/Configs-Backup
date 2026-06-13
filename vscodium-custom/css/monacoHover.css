@@ -1,0 +1,14 @@
+/* 编辑器悬浮提示框 - 彩虹发光边框 */
+div.monaco-hover {
+    border: 1px solid transparent !important;
+    background:
+        linear-gradient(var(--vscode-editorHoverWidget-background, #252526), var(--vscode-editorHoverWidget-background, #252526)) padding-box,
+        linear-gradient(to right, #ff758c, #69f0ae, #ff758c) border-box;
+    background-size: 100% 100%, 200% 100%;
+    animation: monacoHoverBorderShift 3s infinite linear !important;
+}
+
+@keyframes monacoHoverBorderShift {
+    from { background-position: 0% 0%, 0% 0%; }
+    to   { background-position: 0% 0%, 200% 0%; }
+}

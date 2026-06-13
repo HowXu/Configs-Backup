@@ -1,0 +1,56 @@
+/**
+ * Copyright (c) 2024 shaobeichen <shaobeichen@outlook.com>
+ * All rights reserved.
+ */
+
+/* git 待提交数量徽章样式 */
+.activitybar > .content :not(.monaco-menu) > .monaco-action-bar .badge .badge-content {
+  background-image: linear-gradient(45deg, #d44a8e, #ffcb99);
+  border-width: 0 !important;
+  color: rgb(70 70 70) !important;
+}
+
+/* html标签属性 - 自适应主题渐变 */
+:not(.cursor).mtk7 {
+  color: #d19a66;
+  background-image:
+    repeating-linear-gradient(
+      to right,
+      transparent,
+      transparent 8px,
+      rgba(255, 255, 255, 0.08) 8px,
+      rgba(255, 255, 255, 0.08) 9px,
+      transparent 9px,
+      transparent 17px,
+      rgba(0, 0, 0, 0.05) 17px,
+      rgba(0, 0, 0, 0.05) 18px,
+      transparent 18px
+    ),
+    linear-gradient(currentColor, currentColor);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* html标签 - 自适应主题渐变 */
+:not(.cursor).mtk9 {
+  color: #e06c75;
+  background-image:
+    repeating-linear-gradient(
+      to right,
+      transparent,
+      transparent 8px,
+      rgba(255, 255, 255, 0.08) 8px,
+      rgba(255, 255, 255, 0.08) 9px,
+      transparent 9px,
+      transparent 17px,
+      rgba(0, 0, 0, 0.05) 17px,
+      rgba(0, 0, 0, 0.05) 18px,
+      transparent 18px
+    ),
+    linear-gradient(currentColor, currentColor);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 700;
+}

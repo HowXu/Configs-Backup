@@ -24,7 +24,7 @@ return {
    switch_to_last_active_tab_when_closing_tab = true,
 
    -- initial window size (slightly larger than wezterm default 80x24)
-   initial_cols = 100,
+   initial_cols = 120,
    initial_rows = 30,
 
    -- window

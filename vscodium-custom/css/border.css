@@ -1,0 +1,4 @@
+/* 全局移除所有圆角 */
+* {
+    border-radius: 0 !important;
+}

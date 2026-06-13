@@ -1,0 +1,14 @@
+/* 编辑器补全建议列表 - 彩虹发光边框 */
+.editor-widget.suggest-widget {
+    border: 1px solid transparent !important;
+    background:
+        linear-gradient(var(--vscode-editorSuggestWidget-background, #252526), var(--vscode-editorSuggestWidget-background, #252526)) padding-box,
+        linear-gradient(to right, #7ec8e3, #ffb800, #7ec8e3) border-box;
+    background-size: 100% 100%, 200% 100%;
+    animation: suggestWidgetBorderShift 3s infinite linear !important;
+}
+
+@keyframes suggestWidgetBorderShift {
+    from { background-position: 0% 0%, 0% 0%; }
+    to   { background-position: 0% 0%, 200% 0%; }
+}
