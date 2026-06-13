@@ -28,7 +28,8 @@ return {
    initial_rows = 30,
 
    -- window
-   window_decorations = "INTEGRATED_BUTTONS | RESIZE",
+   window_decorations = "TITLE | RESIZE",  -- OS title bar (was INTEGRATED_BUTTONS, those were non-configurable opaque)
+   win32_system_backdrop = 'Mica',         -- Windows 11: title bar background samples desktop
    window_padding = {
       left = 0,
       right = 0,
@@ -37,10 +38,6 @@ return {
    },
    window_close_confirmation = 'NeverPrompt',
    window_frame = {
-      active_titlebar_bg = 'rgba(0, 0, 0, 0)',
-      inactive_titlebar_bg = 'rgba(0, 0, 0, 0)',
-      active_titlebar_fg = '#dbe7f3',
-      inactive_titlebar_fg = '#9fb0c4',
       font_size = 13,   -- slightly larger X / - / [] buttons
    },
    inactive_pane_hsb = {
