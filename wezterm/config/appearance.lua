@@ -10,7 +10,7 @@ return {
 
    -- 真窗口半透明 (76% 不透明 / 24% 透到桌面)
    window_background_opacity = 0.76,
-   text_background_opacity = 0.9,  -- 终端区也半透明 (10% 透)
+   text_background_opacity = 1.0,
 
    -- scrollbar
    enable_scroll_bar = false,
@@ -28,8 +28,7 @@ return {
    initial_rows = 30,
 
    -- window
-   window_decorations = "TITLE | RESIZE",  -- OS title bar (was INTEGRATED_BUTTONS, those were non-configurable opaque)
-   win32_system_backdrop = 'Mica',         -- Windows 11: title bar background samples desktop
+   window_decorations = "INTEGRATED_BUTTONS | RESIZE",
    window_padding = {
       left = 0,
       right = 0,
@@ -38,6 +37,10 @@ return {
    },
    window_close_confirmation = 'NeverPrompt',
    window_frame = {
+      active_titlebar_bg = 'rgba(0, 0, 0, 0)',
+      inactive_titlebar_bg = 'rgba(0, 0, 0, 0)',
+      active_titlebar_fg = '#dbe7f3',
+      inactive_titlebar_fg = '#9fb0c4',
       font_size = 13,   -- slightly larger X / - / [] buttons
    },
    inactive_pane_hsb = {
