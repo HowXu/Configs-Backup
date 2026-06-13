@@ -57,7 +57,7 @@ local colorscheme = {
       '#F2F2F2', -- white
    },
    tab_bar = {
-      background = 'rgba(0, 0, 0, 0)',
+      background = '#1f1f28',
       active_tab = {
          bg_color = '#fab387',
          fg_color = '#1e1e2e',
