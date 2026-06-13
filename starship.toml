@@ -1,0 +1,71 @@
+format = """
+[\u250c](white bold)\
+[\u2591\u2592\u2593](#a3aed2)\
+[ \ue62a nu](bg:#a3aed2 fg:#090c0c)\
+[\ue0b4](bg:#91ddff fg:#a3aed2)\
+[ \uf2c0 ](fg:#000000 bg:#91ddff)\
+$hostname\
+$username\
+[\ue0b4](bg:#769ff0 fg:#91ddff)\
+$conda\
+[\ue0b4](fg:#769ff0 bg:#394260)\
+$git_branch\
+$git_status\
+[\ue0b4](fg:#394260 bg:#212736)\
+[\ue0b4](fg:#212736 bg:#1d2230)\
+$time\
+[\ue0b4](fg:#1d2230)\
+\n[\u2514](white bold)\
+[ \ueb06 at](white bold)\
+$directory
+$character"""
+
+add_newline = false
+
+[hostname]
+format = '[$ssh_symbol$hostname@]($style)'
+ssh_only = false
+style = 'fg:#000000 bg:#91ddff'
+
+[username]
+format = '[$user]($style)'
+show_always = true
+style_user = "fg:#000000 bg:#91ddff"
+style_root = "fg:#red bg:#91ddff"
+
+[directory]
+style = "fg:#e3e5e5"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "\uf0219  "
+"Downloads" = "\uf019 "
+"Music" = "\uf001 "
+"Pictures" = "\uf03e "
+
+[git_branch]
+symbol = "\uf418"
+style = "bg:#394260"
+format = '[[ $symbol $branch ](fg:#769ff0 bg:#394260)]($style)'
+
+[git_status]
+style = "bg:#394260"
+format = '[[($all_status$ahead_behind )](fg:#769ff0 bg:#394260)]($style)'
+
+[conda]
+symbol = "\ue7a8"
+format = '[ PyEnv $environment]($style)'
+style = 'bg:#769ff0 fg:white bold'
+ignore_base = false
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:#1d2230"
+format = '[[$time](fg:#a0a9cb bg:#1d2230)]($style)'
+
+[character]
+success_symbol = '[❯](bold green)'
+error_symbol = '[❯](bold red)'

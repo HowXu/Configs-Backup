@@ -1,0 +1,192 @@
+{
+    "editor.suggestSelection": "first",
+    "files.autoSave": "afterDelay",
+    "workbench.startupEditor": "none",
+    "workbench.sideBar.location": "left",
+    "files.autoGuessEncoding": true,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.renderControlCharacters": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.fontFamily": "Maple Mono NF CN Light",
+    "terminal.integrated.fontFamily": "Maple Mono NF CN",
+    "extensions.ignoreRecommendations": true,
+    "git.enableSmartCommit": true,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "editor.formatOnPaste": true,
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "window.restoreWindows": "none",
+    "files.hotExit": "off",
+    "terminal.integrated.profiles.windows": {
+        "pwsh": {
+            "path": "pwsh.exe",
+            "args": [
+                "-NoProfileLoadTime",
+                "-NoLogo"
+            ]
+        },
+        "nu": {
+            "path": "nu.exe"
+        },
+        "Git Bash": null,
+        "PowerShell": null,
+        "JavaScript 调试终端": null,
+        "Command Prompt": null
+    },
+    "terminal.integrated.defaultProfile.windows": "nu",
+    "window.newWindowProfile": "默认",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.activityBar.location": "top",
+    "security.allowedUNCHosts": [
+        "wsl.localhost"
+    ],
+    "workbench.iconTheme": "catppuccin-macchiato",
+    "security.workspace.trust.enabled": false,
+    "workbench.colorCustomizations": {},
+    "outline-map.customFont": "OPPO Sans 4.0 Regular",
+    "vscode_custom_css.imports": [
+        "file://C:/Users/HowXu/.config/vscodium-custom/css/border.css",
+        "file://C:/Users/HowXu/.config/vscodium-custom/css/linenumber.css",
+        "file://C:/Users/HowXu/.config/vscodium-custom/css/rainbowTab.css",
+        "file://C:/Users/HowXu/.config/vscodium-custom/css/monacoHover.css",
+        "file://C:/Users/HowXu/.config/vscodium-custom/css/logo.css",
+        "file://C:/Users/HowXu/.config/vscodium-custom/css/suggestWidget.css",
+        "file://C:/Users/HowXu/.config/vscodium-custom/js/neovide-cursor.js",
+    ],
+    "chat.agent.enabled": false,
+    "chat.mcp.access": "none",
+    "terminal.integrated.initialHint": false,
+    // this is for blog
+    "markdown.copyFiles.destination": {
+        "/blog/source/_posts/**/*": "../images/${documentBaseName}/"
+    },
+    "editor.pasteAs.preferences": [
+        "markdown.link.image"
+    ],
+    // CPP Only
+    "cmake.debugConfig": {
+        "externalConsole": true,
+        "setupCommands": [
+            {
+                "description": "为gdb启用整齐打印",
+                "text": "-enable-pretty-printing",
+                "ignoreFailures": true
+            },
+            {
+                "description": "反汇编为Intel风格",
+                "text": "-gdb-set disassembly-flavor intel",
+                "ignoreFailures": true
+            },
+            {
+                "description": "让gdb使用UTF-8",
+                "text": "-gdb-set charset UTF-8",
+                "ignoreFailures": false
+            }
+        ]
+    },
+    "cmake.options.statusBarVisibility": "compact",
+    "cmake.preferredGenerators": [
+        "MinGW Makefiles"
+    ],
+    "cmake.options.advanced": {
+        "variant": {
+            "statusBarVisibility": "compact"
+        },
+        "kit": {
+            "statusBarVisibility": "visible"
+        },
+        "build": {
+            "statusBarVisibility": "visible"
+        },
+        "debug": {
+            "statusBarVisibility": "visible"
+        },
+        "cpack": {
+            "statusBarVisibility": "hidden"
+        },
+        "workflow": {
+            "statusBarVisibility": "hidden"
+        },
+        "launchTarget": {
+            "statusBarVisibility": "hidden"
+        }
+    },
+    "clangd.path": "clangd.exe",
+    "clangd.fallbackFlags": [],
+    "clangd.arguments": [
+        "--completion-style=detailed",
+        "--header-insertion=iwyu",
+        "--background-index",
+        "--background-index-priority=low",
+        "--fallback-style=Google",
+        "--function-arg-placeholders=true",
+        "--pretty",
+        "-j=4",
+        "--limit-references=1000",
+        "--limit-results=100",
+        "--query-driver=g*"
+    ],
+    "clangd.onConfigChanged": "restart",
+    "cmake.configureOnEdit": false,
+    "cmake.configureOnOpen": false,
+    "[c]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "clang-format.fallbackStyle": "WebKit",
+    "[glsl]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    // Java Profile
+    "redhat.telemetry.enabled": false,
+    "java.jdt.ls.vmargs": "-XX:+UseStringDeduplication -XX:CICompilerCount=2 -XX:+HeapDumpOnOutOfMemoryError -XX:+UseG1GC -XX:ReservedCodeCacheSize=512m -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1536m -Xms512m -Xlog:disable -XX:-OmitStackTraceInFastThrow",
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "java.import.gradle.annotationProcessing.enabled": false,
+    // WEB Profile
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    // python and leetcode
+    "python.defaultInterpreterPath": "C:\\Users\\HowXu\\.vfox\\sdks\\python\\python.exe",
+    "python.linting.enabled": false,
+    "labuladong-leetcode.workspaceFolder": "c:\\Users\\HowXu\\Documents\\source\\LeetCode",
+    "labuladong-leetcode.hint.configWebviewMarkdown": false,
+    "labuladong-leetcode.hint.commandShortcut": false,
+    "labuladong-leetcode.hint.commentDescription": false,
+    // front
+    // rust
+
+    "rust-analyzer.checkOnSave": true,
+    "rust-analyzer.cargo.allTargets": false,
+    "rust-analyzer.lens.enable": true,
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "rust-analyzer.inlayHints.parameterHints.enable": false,
+    "rust-analyzer.cachePriming.enable": true,
+
+    "commit-ai.servers": [
+        {
+            "type": "openai",
+            "apiKey": "sk-ed5884939e7a41bdaeae0745ef620e54",
+            "models": [
+                {
+                    "name": "deepseek-v4-flash",
+                    "enabled": true
+                }
+            ],
+            "baseURL": "https://api.deepseek.com"
+        }
+    ],
+    "commit-ai.reasoningEffort": "medium",
+    "labuladong-leetcode.defaultLanguage": "python",
+    "workbench.colorTheme": "Maple Dark",
+}
