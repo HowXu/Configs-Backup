@@ -37,7 +37,10 @@ return {
    },
    window_close_confirmation = 'NeverPrompt',
    window_frame = {
-      active_titlebar_bg = '#090909',
+      active_titlebar_bg = 'rgba(0, 0, 0, 0)',
+      inactive_titlebar_bg = 'rgba(0, 0, 0, 0)',
+      active_titlebar_fg = '#dbe7f3',
+      inactive_titlebar_fg = '#9fb0c4',
       font_size = 13,   -- slightly larger X / - / [] buttons
    },
    inactive_pane_hsb = {
