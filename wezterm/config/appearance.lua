@@ -41,7 +41,7 @@ return {
       inactive_titlebar_bg = '#1f1f28',
       active_titlebar_fg = '#dbe7f3',
       inactive_titlebar_fg = '#9fb0c4',
-      font_size = 16,   -- taller titlebar row
+      font_size = 13,   -- smaller text fits 'pwsh.exe' in title bar
    },
    inactive_pane_hsb = {
       saturation = 0.9,
