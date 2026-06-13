@@ -23,6 +23,10 @@ return {
    show_tab_index_in_tab_bar = false,
    switch_to_last_active_tab_when_closing_tab = true,
 
+   -- initial window size (slightly larger than wezterm default 80x24)
+   initial_cols = 100,
+   initial_rows = 30,
+
    -- window
    window_decorations = "INTEGRATED_BUTTONS | RESIZE",
    window_padding = {
@@ -34,8 +38,7 @@ return {
    window_close_confirmation = 'NeverPrompt',
    window_frame = {
       active_titlebar_bg = '#090909',
-      -- font = fonts.font,
-      -- font_size = fonts.font_size,
+      font_size = 13,   -- slightly larger X / - / [] buttons
    },
    inactive_pane_hsb = {
       saturation = 0.9,

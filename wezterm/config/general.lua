@@ -5,7 +5,7 @@ return {
    exit_behavior_messaging = 'Verbose',
    status_update_interval = 1000,
 
-   scrollback_lines = 5000,
+   scrollback_lines = 10000,
 
    audible_bell = "Disabled",
    warn_about_missing_glyphs = false, -- 禁用字形缺失警告
