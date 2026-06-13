@@ -10,7 +10,7 @@ return {
 
    -- 真窗口半透明 (76% 不透明 / 24% 透到桌面)
    window_background_opacity = 0.76,
-   text_background_opacity = 1.0,
+   text_background_opacity = 0.9,  -- 终端区也半透明 (10% 透)
 
    -- scrollbar
    enable_scroll_bar = false,
