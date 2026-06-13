@@ -57,17 +57,17 @@ local colorscheme = {
       '#F2F2F2', -- white
    },
    tab_bar = {
-      background = 'rgba(0, 0, 0, 0.4)',
+      background = '#11111b',
       active_tab = {
-         bg_color = mocha.surface2,
-         fg_color = mocha.text,
+         bg_color = '#fab387',
+         fg_color = '#1e1e2e',
       },
       inactive_tab = {
          bg_color = mocha.surface0,
          fg_color = mocha.subtext1,
       },
       inactive_tab_hover = {
-         bg_color = mocha.surface0,
+         bg_color = mocha.surface1,
          fg_color = mocha.text,
       },
       new_tab = {
