@@ -28,7 +28,7 @@ GpuAdapters.__index = GpuAdapters
 
 ---See `https://github.com/gfx-rs/wgpu#supported-platforms` for more info on available backends
 GpuAdapters.AVAILABLE_BACKENDS = {
-   windows = { 'Dx12', 'Vulkan', 'Gl' },
+   windows = { 'Vulkan', 'Dx12', 'Gl' },
    linux = { 'Vulkan', 'Gl' },
    mac = { 'Metal' },
 }

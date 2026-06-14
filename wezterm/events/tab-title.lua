@@ -42,19 +42,14 @@ M.setup = function()
       local pane_title = tab.active_pane.title or ''
 
       local content
-      if #process_name > 0 and #pane_title > 0 and not pane_title:find(process_name, 1, true) then
-         content = process_name .. '  ' .. pane_title
-      elseif #pane_title > 0 then
+      if #pane_title > 0 then
          content = pane_title
-      else
+      elseif #process_name > 0 then
          content = process_name
+      else
+         content = 'shell'
       end
 
-      if #content > max_width - 6 then
-         content = wezterm.truncate_right(content, max_width - 6)
-      end
-
-      -- Render: 2 spaces padding + content + 2 spaces padding (no rounded glyphs)
       _push(bg, fg, { Intensity = 'Bold' }, '  ')
       _push(bg, fg, { Intensity = 'Bold' }, content)
       _push(bg, fg, { Intensity = 'Bold' }, '  ')

@@ -78,6 +78,19 @@ local keys = {
    { key = 'c',          mods = 'CTRL|SHIFT',  action = act.CopyTo('Clipboard') },
    { key = 'v',          mods = 'CTRL|SHIFT',  action = act.PasteFrom('Clipboard') },
    { key = 'Insert',     mods = 'SHIFT',       action = act.PasteFrom('PrimarySelection') },
+   -- smart Ctrl-C: copy if selection, else send SIGINT (interrupt)
+   {
+      key = 'c',
+      mods = 'CTRL',
+      action = wezterm.action_callback(function(window, pane)
+         local sel = window:get_selection_text_for_pane(pane)
+         if sel and #sel > 0 then
+            window:copy_to_clipboard(sel)
+         else
+            window:perform_action(act.SendString('\x03'), pane)
+         end
+      end),
+   },
 
    -- tabs --
    -- tabs: spawn+close
@@ -182,11 +195,11 @@ local mouse_bindings = {
       mods = 'CTRL',
       action = act.OpenLinkAtMouseCursor,
    },
-   -- Right-click to copy selection
+   -- Right-click to paste from clipboard
    {
-      event = { Up = { streak = 1, button = 'Right' } },
+      event = { Down = { streak = 1, button = 'Right' } },
       mods = 'NONE',
-      action = act.CopyTo('Clipboard'),
+      action = act.PasteFrom('Clipboard'),
    },
 }
 

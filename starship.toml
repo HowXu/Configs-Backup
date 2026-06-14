@@ -1,7 +1,7 @@
 format = """
 [\u250c](white bold)\
 [\u2591\u2592\u2593](#a3aed2)\
-[ \ue62a nu](bg:#a3aed2 fg:#090c0c)\
+[ \ue62a $shell](bg:#a3aed2 fg:#090c0c)\
 [\ue0b4](bg:#91ddff fg:#a3aed2)\
 [ \uf2c0 ](fg:#000000 bg:#91ddff)\
 $hostname\
@@ -69,3 +69,7 @@ format = '[[$time](fg:#a0a9cb bg:#1d2230)]($style)'
 [character]
 success_symbol = '[❯](bold green)'
 error_symbol = '[❯](bold red)'
+
+[shell]
+disabled = false
+style = 'bg:#a3aed2 fg:FFFFFF'
