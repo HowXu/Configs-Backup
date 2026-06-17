@@ -5,6 +5,8 @@ return {
    exit_behavior_messaging = 'Verbose',
    status_update_interval = 1000,
 
+   default_cursor_style = 'BlinkingBar',
+
    scrollback_lines = 10000,
 
    audible_bell = "Disabled",

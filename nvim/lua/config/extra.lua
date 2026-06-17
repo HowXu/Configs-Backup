@@ -37,7 +37,7 @@ require("lualine").setup({
           if filetype == "" then
             filetype = "PlainText"
           end
-          return string.format(" %s | %s | %s ", fileformat, fileencoding, filetype)
+          return string.format(" %s | %s | %s", fileformat, fileencoding, filetype)
         end,
         padding = { right = 1 },
       },

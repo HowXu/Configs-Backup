@@ -1,7 +1,7 @@
 format = """
 [\u250c](white bold)\
 [\u2591\u2592\u2593](#a3aed2)\
-[ \ue62a $shell](bg:#a3aed2 fg:#090c0c)\
+[ \ue62a  $shell](bg:#a3aed2 fg:#090c0c)\
 [\ue0b4](bg:#91ddff fg:#a3aed2)\
 [ \uf2c0 ](fg:#000000 bg:#91ddff)\
 $hostname\
@@ -72,4 +72,9 @@ error_symbol = '[❯](bold red)'
 
 [shell]
 disabled = false
+bash_indicator = "Bash"
+fish_indicator = "Fish"
+zsh_indicator = "Zsh"
+nu_indicator = "NuShell"
+pwsh_indicator = "Pwsh"
 style = 'bg:#a3aed2 fg:FFFFFF'

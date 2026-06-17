@@ -61,7 +61,7 @@ local _push = function(text, icon, fg, bg, separate)
 end
 
 local _set_time = function()
-   local time = wezterm.strftime(' %H:%M:%S')
+   local time = wezterm.strftime('%H:%M:%S')
    _push(time, '', colors.date_fg, colors.date_bg, true)
 end
 
@@ -88,8 +88,8 @@ end
 M.setup = function()
    wezterm.on('update-right-status', function(window, _pane)
       __cells__ = {}
-      _set_time()
-      _set_battery()
+      -- _set_time()
+      -- _set_battery()
 
       window:set_right_status(wezterm.format(__cells__))
    end)
